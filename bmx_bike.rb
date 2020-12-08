@@ -1,6 +1,6 @@
 require_relative 'tail_pack'
 
-class BmxBike
+class BmxBike < Bike
 
   def initialize
     @tail_pack = TailPack.new
@@ -32,5 +32,17 @@ class BmxBike
   def hourly_rate
     @hourly_price
   end
+
+  def calculate_hourly_cost(hourly_checkout)
+    # TODO add working code 
+  end
+
+  def calculate_daily_cost(days_checkout)
+    # TODO add working code
+  end
+
+  def calculate_weekly_cost(weekly_checkout)
+    # TODO add working code
+  end 
 
 end
